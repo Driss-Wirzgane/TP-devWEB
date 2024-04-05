@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body bgcolor="e6e47c">
+        <pre>Civilité                                         <input type="radio" name="civilite" value="mademoiselle">   <label>Mademoiselle</label>       <input type="radio" name="civilite" value="madame">     <label>Madame</label>   <input type="radio" name="civilite" value="monsieur">   <label>Monsieur</label>   <span style="color: red;"><i>(buttons radio => s'excluant matuellement)</i></span>
+
+        <pre>Nom / Prénom                                      <textarea  cols="80" rows="1"></textarea></pre>
+
+        <pre>Adresse                                          <textarea cols="100" rows="5"></textarea></pre>
+        
+        <pre>No postal / Localité                              <input type="text" name="no_postal" maxlength="4">   <input type="textarea" name="localite" size = "55">   <span style="color: red;"><i>(limiter entree No a 4 car.) (valeur predefinie)</i></span></pre>
+
+        <pre>Pays                                              <select name="pays">
+            <option value="suisse">Suisse</option>
+            <option value="france">France</option>
+            <option value="usa">États-Unis</option>
+            <option value="maroc">Maroc</option>
+        </select>               <span style="color: red;"><i>menu avec preselectionnement suisse</i></span></pre>
+        <pre>Plateforme(s)                                     <input type="checkbox" name="plateforme" value="mac">   <label>Macintosh</label>   <input type="checkbox" name="plateforme" value="windows">   <label>Windows</label>   <input type="checkbox" name="plateforme" value="linux">   <label>Linux</label>   <span style="color: red;"><i>(cases a cocher => plusieurs choix possibles)</i></span></pre>
+        <pre>Applications                                      <select name="apps" size="5">
+            <option value="bureautique">Bureautique</option>
+            <option value="dao">DAO</option>
+            <option value="sgbd">SGBD</option>
+            <option value="internet">Internet</option>
+        </select>      <span style="color: red;"><i>plusieurs coix possibles avec "ctrl-clic" ou "maj-clic"</i></span></pre>
+</body>
+</html>

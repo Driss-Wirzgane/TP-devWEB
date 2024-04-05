@@ -1,0 +1,107 @@
+/* Padding blanc */
+.white-padding {
+    padding: ; /* ou la valeur que vous souhaitez */
+    background-color: ;
+}
+
+/* Padding gris */
+.gray-padding {
+    padding: ; /* ou la valeur que vous souhaitez */
+    background-color: ; /* ou la couleur grise de votre choix */
+}
+
+/* Padding gris */
+.yellow-padding {
+    padding: ; /* ou la valeur que vous souhaitez */
+    background-color: ;  /* ou la couleur grise de votre choix */
+}
+
+body {
+    font-family: ;
+    margin: ;
+    padding: ;
+    
+    
+     border: ;
+    background-color: ; /* Couleur de fond du texte */
+}
+
+header {
+    padding: ;
+    text-align: ;
+}
+
+main {
+    padding: ;
+    font-family: ;
+    font-weight: ;
+    font-size: ;
+}
+
+.separator {
+    border: ; /* Ligne rouge en gras */
+    width: ;
+    margin: ; /* Espacement autour de la ligne */
+}
+
+.section {
+    padding: ;  /* Ajoutez d'autres styles au besoin */
+}
+
+footer {
+    background-color: ;
+    border-top: ; /* Bordures du pied de page */
+    color: ;
+    text-align: ;
+    padding: ;
+    bottom: ;
+    width: %;
+    border-left: ;
+    border-right: ;
+}
+
+.footer-content {
+    max-width: ; /* Ajustez la largeur selon vos besoins */
+    margin: ;
+    color: ;
+    background-color: ;
+}
+
+footer a {
+    text-decoration: ; /* Soulignez le lien */
+    color: ; /* Couleur du texte du lien */
+}
+
+.centered-image {
+    
+    max-width: ; /* Pour que l'image ne dépasse pas la largeur du cadre */
+    
+}
+
+.centered-square {
+    text-align: ;
+    padding: 0px;
+    background-color: ; /* Couleur de fond blanche */
+    border: ; /* Bordure solide noire */
+    margin: ;
+    width: ; /* Largeur  */
+    
+}
+
+.gray-underline {
+    color: ; /* Couleur grise */
+    text-decoration: ; /* Soulignez le lien */
+}
+
+.literature-poem {
+    margin: ;
+    padding: ; /* Ajout d'une marge interne de 10px pour plus d'espace à l'intérieur du div */
+    width: ;
+    box-sizing: ; /* Inclure la marge et le rembourrage dans la largeur du div */
+}
+
+.literature-poem p {
+    margin: ;
+    line-height: ;
+}
+

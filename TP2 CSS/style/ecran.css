@@ -1,0 +1,107 @@
+/* Padding blanc */
+.white {
+  padding:  5px; /* ou la valeur que vous souhaitez */
+  background-color: white;
+}
+
+/* Padding gris */
+.gray {
+  padding: 80px; /* ou la valeur que vous souhaitez */
+  background-color: rgba(128, 128, 128, 0.397); /* ou la couleur grise de votre choix */
+}
+
+.yellow {
+  padding: 0px; /* ou la valeur que vous souhaitez */
+  background-color: #f6fcea;  /* ou la couleur grise de votre choix */
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT','Calibri', 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  padding: 20px;
+  border: solid rgba(255, 0, 0, 0.719) 10px ;
+  background-color: white ;  /*Couleur de fond du texte */
+}
+
+header {
+  padding: 20px ;
+  text-align : center ;
+}
+
+main {
+  padding: 20px ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: initial;
+  font-size: 18px;
+}
+
+.separator {
+  border: solid 2px red; /* Ligne rouge en gras */
+  width: 90%;
+  margin: auto; /* Espacement autour de la ligne */
+}
+
+.section {
+  padding: 10px;  /* Ajoutez d'autres styles au besoin */
+  margin-left: 25px;
+}
+
+footer {
+  background-color: whitesmoke;
+  border-top: solid 3px red; /* Bordures du pied de page */
+  color: black;
+  text-align: right;
+  padding: 10px;
+  bottom: auto;
+  width: auto;
+  border-left: 50px solid gray;
+  border-right:  50px solid gray;
+}
+
+.footer-content {
+  max-width: 90%; 
+  margin: auto;
+  color: black;
+  background-color: whitesmoke;
+}
+
+footer a {
+  text-decoration: underline ; /* Soulignez le lien */
+  color: gray; /* Couleur du texte du lien */
+}
+
+.centered-image {
+  
+  max-width: 30em ; /* Pour que l'image ne dépasse pas la largeur du cadre */
+  
+}
+
+.centered-square {
+  text-align: center ;
+  padding: auto;
+  background-color: whitesmoke ; /* Couleur de fond blanche */
+  border: solid 5px black ; /* Bordure solide noire */
+  margin: auto;
+  width: 35em  /* Largeur  */
+  
+}
+
+.gray-underline {
+  color: gray; /* Couleur grise */
+  text-decoration: underline ; /* Soulignez le lien */
+}
+
+.literature-poem {
+  margin: auto;
+  padding: 0px; /* Ajout d'une marge interne de 10px pour plus d'espace à l'intérieur du div */
+  width: auto;
+  box-sizing: content-box; /* Inclure la marge et le rembourrage dans la largeur du div */
+}
+
+.literature-poem p {
+  margin: 20px;
+  line-height: 0.25%;
+}
+
+
+
