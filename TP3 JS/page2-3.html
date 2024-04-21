@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Exercice 3</title>
+</head>
+<body>
+    <h1>Quiz sur la technologie et les consoles de jeu</h1>
+    <form id="quizForm">
+        <p>Que signifie CPU ?</p>
+        <input type="radio" name="q1" value="1"> Unité Centrale de Traitement<br>
+        <input type="radio" name="q1" value="0"> Unité Personnelle d'Ordinateur<br>
+        <input type="radio" name="q1" value="0"> Unité Centrale d'Énergie<br>
+
+        <p>Quelle entreprise a développé la console PlayStation ?</p>
+        <input type="radio" name="q2" value="0"> Microsoft<br>
+        <input type="radio" name="q2" value="1"> Sony<br>
+        <input type="radio" name="q2" value="0"> Nintendo<br>
+
+        <p>Que signifie GPU ?</p>
+        <input type="radio" name="q3" value="1"> Unité de Traitement Graphique<br>
+        <input type="radio" name="q3" value="0"> Unité de Traitement Générale<br>
+        <input type="radio" name="q3" value="0"> Unité de Traitement Globale<br>
+
+        <p>Laquelle des options suivantes n'est pas une console Nintendo ?</p>
+        <input type="radio" name="q4" value="0"> NES<br>
+        <input type="radio" name="q4" value="0"> SNES<br>
+        <input type="radio" name="q4" value="1"> Xbox<br>
+
+        <input type="button" value="Valider" onclick="calculateResult()">
+    </form>
+
+    <script>
+        function calculateResult(){
+            var score = 0;
+
+            var repond = document.getElementsByTagName("input");
+            for (var i = 0; i < repond.length; i++) {
+                if (repond[i].type == "radio" && repond[i].checked) {
+                    score += parseInt(repond[i].value);
+                }
+            }
+        document.write("score :" + score);
+        }
+
+    </script>

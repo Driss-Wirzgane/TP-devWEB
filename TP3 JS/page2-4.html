@@ -1,0 +1,38 @@
+<html><head><title> Exercice 4 </title> </head>
+    <body> 
+        <h1> Exercice 4 </h1>
+        <ul id="maListe">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <input type="text" id="nouvelItem">
+        <button onclick="ajouterItem()">Ajouter</button>
+        <button onclick="supprimer()">Supprimer</button>
+
+        <script>
+            var liste = document.getElementsByTagName("li");
+
+            var Item = document.getElementsByTagName("ul");
+
+            liste.setAttribute("type", "circle");
+
+            function ajouterItem() {
+            var nouvelItem = document.getElementById("nouvelItem").value;
+            var liste = document.getElementById("maListe");
+            var nouveauLI = document.createElement("li");
+            var texte = document.createTextNode(nouvelItem);
+            nouveauLI.appendChild(texte);
+            liste.appendChild(nouveauLI);
+        }
+
+        function supprimer() {
+            var liste = document.getElementById("maListe");
+            var dernierItem = liste.lastElementChild;
+            liste.removeChild(dernierItem);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice 5</title>
+    </head>
+<body>
+    <h1>Exercice 5</h1>
+    <form onsubmit=" verifForm()">
+        <div>
+            <label for="username">Nom utilisateur:</label>
+            <input type="text" id="username" name="username" onblur="verifPseudo()">
+        </div>
+        <div>
+            <label for="email">Adresse email:</label>
+            <input type="email" id="email" name="email" onblur="verifMail()">
+        </div>
+        <div>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" onblur="verifPass()">
+        </div>
+        <div>
+            <label for="confirmPassword">Confirmation mot de passe:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" onblur="verifPass()">
+        </div>
+        <input type="submit" value="Valider">
+    </form>
+
+    <script>
+        function surligne(champ, erreur) {
+            if (erreur) {
+                champ.style.backgroundColor = "red";
+            } else {
+                champ.style.backgroundColor = "";
+            }
+        }
+
+        function verifPseudo() {
+            var username = document.getElementById("username");
+            if (username.value.length < 3 || username.value.length > 25) {
+                surligne(username, true);
+                return false;
+            } else {
+                surligne(username, false);
+                return true;
+            }
+        }
+
+        function verifMail() {
+            var email = document.getElementById("email");
+            var exp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!exp.test(email.value)) {
+                surligne(email, true);
+                return false;
+            } else {
+                surligne(email, false);
+                return true;
+            }
+        }
+
+        function verifPass() {
+            var password = document.getElementById("password");
+            var confirmPassword = document.getElementById("confirmPassword");
+            if (password.value != confirmPassword.value) {
+                surligne(password, true);
+                surligne(confirmPassword, true);
+                return false;
+            } else {
+                surligne(password, false);
+                surligne(confirmPassword, false);
+                return true;
+            }
+        }
+
+        function verifForm() {
+            if (verifPseudo() && verifMail() && verifPass()) {
+                event.preventDefault();
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

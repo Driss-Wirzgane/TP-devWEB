@@ -1,0 +1,13 @@
+<html><head><title> Exercice 2 </title> </head>
+<body> 
+<h1> Exercice 2 </h1>
+<script>
+    let conf = true;
+    while(conf){
+        let exp = window.prompt("Entrer une expression mathematique :");
+        let a = eval(exp);
+        document.write("le resultat est :" + a);
+        conf = window.confirm("continue ?")
+    }
+</script>
+</body></html>

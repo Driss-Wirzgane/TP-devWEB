@@ -1,0 +1,65 @@
+<html><head><title> Exercice 1 </title> </head>
+<body> 
+    <center><h1> Exercice 1 </h1></center>
+    <script>
+        var contentcontainer = document.createElement('div');
+        document.body.appendChild(contentcontainer);
+
+        //Q1
+        //document.write("Bonjour Genie Informatique <br>");
+        var p1 = document.createElement('p');
+        p1.textContent = "Bonjour Genie Informatique"
+        contentcontainer.appendChild(p1);
+
+        //Q2
+        let a = 4;
+        //document.write(a + "<br>");
+        var p2 = document.createElement('p');
+        p2.textContent = "valeur de a :" + a;
+        contentcontainer.appendChild(p2);
+
+        //Q3
+        var p3 = document.createElement('p');
+        p3.textContent = "hello "
+        for (let i = 0;i < 49;i++){
+            //document.write("hello ");
+            p3.textContent += "hello "
+        }
+        contentcontainer.appendChild(p3);
+
+        //Q4
+        window.alert("valeur de a :" + a);
+
+        //Q5
+        window.alert("2eme alert"); 
+
+        //Q6
+        var conf = window.confirm("etes-vous content ?"); 
+        if(conf){
+            window.alert("vous êtes content");
+        }
+        else {
+            window.alert("Mon utilisateur n’est pas content");
+        }
+
+        //Q7
+        var conf = window.confirm("etes-vous content ?"); 
+        if(conf){
+            window.alert("vous êtes content");
+        }
+        else {
+            let p4 = window.prompt("pourqoui ?");
+            document.write("la raison : " + p4);
+        }
+
+        //Q8 && //Q9
+        var conf = window.confirm("etes-vous content ?"); 
+        if(conf){
+            window.alert("vous êtes content");
+        }
+        else {
+            window.open("https://www.blagues-en-stock.org/blagues-belles-meres.html");
+        }
+
+    </script>
+</body></html>

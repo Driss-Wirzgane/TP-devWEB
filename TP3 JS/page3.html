@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Exercice 3</title>
+</head>
+<body> 
+    <h1>Exercice 3</h1>
+    <script>
+        var a = Math.floor(Math.random() * 10);
+
+        function jeu() {
+            let guess = window.prompt("Devinez le nombre entre 0 et 10 :");
+
+            if (guess == a) {
+                alert("Gagné!");
+            } else if (guess < a) {
+                alert("Trop petit");
+                jeu(); 
+            } else {
+                alert("Trop grand");
+                jeu(); 
+            }
+        }
+
+     jeu();
+    </script>
+</body>
+</html>

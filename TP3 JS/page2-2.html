@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 2</title>
+</head>
+<body> 
+    <h1>Exercice 1</h1>
+    <script>
+         var time = prompt("Entrez la date");
+        function countdown(){
+            var targetDate = new Date(time).getTime();
+            var currentDate = new Date().getTime();
+            var diff = targetDate - currentDate;
+
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);   
+
+            document.getElementById("countdown").innerHTML = "Days: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds;
+        }   
+        setInterval(countdown, 1000); 
+    </script>
+    <div id="countdown"></div>
+</body>
+</html>
