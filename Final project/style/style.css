@@ -1,0 +1,164 @@
+body {
+    margin: 20px;
+    background-color: rgb(248, 233, 205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.buttonDiv button{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius:30px;
+    background-color: rgba(248, 233, 205, 0.61);
+    cursor: pointer;
+}
+
+.buttonDiv img {
+    width: 40px;
+    height: 40px;
+} 
+
+
+.abt {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 80px;
+    border-radius: 30px;
+    background-color: beige;
+    margin-top: 20vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+    height: 10vh;
+    background-color: beige;
+    display: flex;
+    border-radius: 300px;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px; 
+}
+
+#logoimg img {
+    width: 40px; 
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: right; 
+    align-items: center;
+    padding: 0 20px;
+}
+.nav ul {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav ul a {
+    text-decoration: none; 
+    color: black;
+    padding: 0 20px; 
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.Produit{
+    background-color: beige;
+    margin: 10px;
+    padding: 10px;
+    width: 85%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ADD{
+    background-color: beige;
+    margin: 10px;
+    padding: 10px;
+    height: 28vh;
+    width: 80%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#addbutton {
+    scale: 45%;
+    cursor: pointer;
+}
+
+
+.form{
+    margin-top: 20px;   
+    display: none;
+}
+
+.form input {
+    border-radius: 30px;
+    height: 40px;
+}
+
+.form input[type="submit"]{
+    margin-left: 90%;
+    margin-bottom: 30px;
+    background-color: rgba(248, 233, 205, 0.61);
+    padding: 10px;
+}
+
+#desc{
+    width: 52vh;
+    margin-left: 25px;
+}
+
+#prix{
+    margin-left: 73px;
+}
+
+
+#valider:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+}
+
+.buttonDiv button:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+}
+
+ul:hover {
+    transform: translateY(-2px);
+}
+
+#addbutton:hover{
+    transform: translateY(-5px);
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

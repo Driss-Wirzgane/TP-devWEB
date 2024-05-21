@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ProdPalace</title>
+</head>
+<body>
+    <div class="header">
+        <ul id="logoimg"><a href="main.html"><img src="images/product-management_12096974.png" alt="Logo"></a></ul>
+        <div class="nav">
+            <ul><p id="ajouter">Ajouter un Produit</p></ul>
+            <ul id="abtbutton"><p>About Us</p> </ul>
+        </div>
+    </div>
+    <div class="abt" id="abt">
+        <h2>Cree par : Driss Wirzgane</h2>
+        <h2>Encadree par : Prof Zineb lamghari</h2>
+        <h5>Ceci est juste un projet scolaire de développement web pour la filière Génie Informatique à l'ESTF.</h5>
+    </div>
+    <div class="list">
+        
+        <div id="products" class="products">
+        </div>
+
+        <div class="ADD" id="addsection">
+            <div class="addbutton">
+                <img id="addbutton" src="images/plus_8333955.png">
+            </div>
+            <div class="form">
+                <input type="text" name="id" id="id" hidden="true">
+                <p>Nom de Produit : <input type="text" name="Nom" id="nom"></p>
+                <p>Description :    <input type="text" name="Description" id="desc"></p>
+                <p>Prix     :       <input type="text" name="Prix" id="prix"></p>
+                <input type="submit" name="valider" id="valider">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
