@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update Product</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <form id="form">
+        <label for="id">Id:</label>
+        <select id="id" name="id" form="idform"></select>        
+        <input type="submit" name="valider" id="valider">
+
+</body>
+        <script>
+            getProduct();
+            document.getElementById('valider').addEventListener('click',function(event) {
+                event.preventDefault();
+                let id = document.getElementById('id').value;
+                deleteProduct(id);
+                window.location.reload();
+
+            })
+            function deleteProduct(id) {
+            $.ajax({
+                url: 'http://localhost/TP7/exemple%20supp/delete.php?id='+id,
+                type: 'GET',
+                success: function(response) {
+                    console.log('Product deleted successfully.');
+                },
+                error: function() {
+                    console.error('Request failed.');
+                }
+            });
+        }
+            function getProduct() {
+            let select = document.getElementById('id');
+            $.ajax({
+                url: 'get.php',
+                type: 'GET',
+                success: function(response) {
+                    var ids = JSON.parse(response); 
+                    select.innerHTML = '';
+                    for (var i = 0; i < ids.length; i++) {
+                        let option = document.createElement('option');
+                        option.value = ids[i].id; 
+                        option.textContent = ids[i].id;
+                        select.appendChild(option);
+                    }
+                },
+                error: function() {
+                    console.error('Request failed.');
+                }
+            });
+        }
+
+            </script>
+</html>
